@@ -12,16 +12,35 @@
 #include <stdlib.h>
 
 // =============================================================================
-// PART 3: DATA SEGMENT - Global and Static Variables
+// PART 1: DATA TYPES AND SIZES
 // =============================================================================
-// Global variables live in the data segment - they exist for the entire
-// program lifetime and have fixed memory addresses.
 
-// TODO: Declare a global integer variable called 'global_counter' and initialize it to 100
-
-
-// TODO: Declare a static integer variable called 'static_value' and initialize it to 200
-
+void investigate_data_types() {
+    printf("\n=== DATA TYPES AND MEMORY SIZES ===\n");
+    
+    // TODO: Declare variables of different types:
+    // - int called 'my_int' with value 42
+    // - float called 'my_float' with value 3.14
+    // - double called 'my_double' with value 2.71828
+    // - char called 'my_char' with value 'C'
+    
+    
+    
+    
+    
+    // TODO: For each variable, print:
+    // 1. Its value
+    // 2. Its memory address using %p format specifier and (void*)&variable
+    // 3. Its size in bytes using sizeof() operator
+    //
+    // Example format:
+    // printf("int: value = %d, address = %p, size = %zu bytes\n", 
+    //        my_int, (void*)&my_int, sizeof(my_int));
+    
+    
+    
+    
+}
 
 // =============================================================================
 // PART 2: STACK ALLOCATION - Function Local Variables
@@ -58,35 +77,28 @@ void nested_function_call() {
 }
 
 // =============================================================================
-// PART 1: DATA TYPES AND SIZES
+// PART 3: DATA SEGMENT - Global and Static Variables
 // =============================================================================
+// Global variables must be declared outside of any function.
+// They live in the data segment - they exist for the entire program lifetime
+// and have fixed memory addresses.
 
-void investigate_data_types() {
-    printf("\n=== DATA TYPES AND MEMORY SIZES ===\n");
+// TODO: Declare a global integer variable called 'global_counter' and initialize it to 100
+
+
+// TODO: Declare a static integer variable called 'static_value' and initialize it to 200
+
+
+void investigate_data_segment() {
+    printf("\n=== DATA SEGMENT (Global and Static Variables) ===\n");
     
-    // TODO: Declare variables of different types:
-    // - int called 'my_int' with value 42
-    // - float called 'my_float' with value 3.14
-    // - double called 'my_double' with value 2.71828
-    // - char called 'my_char' with value 'C'
-    
-    
-    
-    
-    
-    // TODO: For each variable, print:
-    // 1. Its value
-    // 2. Its memory address using %p format specifier and (void*)&variable
-    // 3. Its size in bytes using sizeof() operator
-    //
-    // Example format:
-    // printf("int: value = %d, address = %p, size = %zu bytes\n", 
-    //        my_int, (void*)&my_int, sizeof(my_int));
-    
-    
+    // TODO: Print the addresses and values of global_counter and static_value
+    // Example: printf("global_counter: address = %p, value = %d\n", 
+    //                 (void*)&global_counter, global_counter);
     
     
 }
+
 
 // =============================================================================
 // PART 4: HEAP ALLOCATION
@@ -138,10 +150,7 @@ int main() {
     nested_function_call();
     
     // Part 3: Examine data segment (global and static variables)
-    printf("\n=== DATA SEGMENT (Global and Static Variables) ===\n");
-    // TODO: Print the addresses and values of global_counter and static_value
-    // Example: printf("global_counter: address = %p, value = %d\n", 
-    //                 (void*)&global_counter, global_counter);
+    investigate_data_segment();
     
     
     
