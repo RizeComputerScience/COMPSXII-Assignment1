@@ -9,7 +9,6 @@ This assignment investigates how C programs organize memory by exploring the fou
 
 ## Files in This Repository
 - `memory_detective.c` - Main assignment file with TODO sections to complete
-- `compile_and_run.sh` - Helper script to compile and run your program
 - `README.md` - This file
 
 ## Getting Started
