@@ -23,22 +23,10 @@ gcc --version
 
 ### Compiling Your Program
 
-#### Option 1: Use the helper script (Mac/Linux)
-```bash
-chmod +x compile_and_run.sh  # Make script executable (only needed once)
-./compile_and_run.sh
-```
-
-#### Option 2: Compile manually
+Compile manually by running:
 ```bash
 gcc -Wall -Wextra memory_detective.c -o memory_detective
 ./memory_detective
-```
-
-#### For Windows Users
-```bash
-gcc -Wall -Wextra memory_detective.c -o memory_detective.exe
-memory_detective.exe
 ```
 
 ## What You Need to Do
